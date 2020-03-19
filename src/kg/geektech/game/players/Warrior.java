@@ -1,5 +1,7 @@
 package kg.geektech.game.players;
 
+import kg.geektech.game.general.RPG_Game;
+
 import java.util.Random;
 
 public class Warrior extends Hero {
@@ -10,7 +12,7 @@ public class Warrior extends Hero {
 
     @Override
     public void applySuperAbility(Boss boss, Hero[] heroes) {
-        setHealth(50);
+        setDamage(RPG_Game.damageWarrior);
         Random r = new Random();
         int criticalDamage = r.nextInt(3) + 2;
         setDamage(getDamage()*criticalDamage);

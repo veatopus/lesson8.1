@@ -3,11 +3,12 @@ package kg.geektech.game.general;
 import kg.geektech.game.players.*;
 
 public class RPG_Game {
+    public static int damageWarrior = 50;
 
     public static void startGame() {
         Boss boss = new Boss(1000, 100);
         Magic magic = new Magic(100, 70);
-        Warrior warrior = new Warrior(250, 50);
+        Warrior warrior = new Warrior(250, damageWarrior);
         Medic medic = new Medic(150, 0, 50);
         Hunter hunter = new Hunter(100, 70);
         Medic youngMedic = new Medic(120, 0, 10);
