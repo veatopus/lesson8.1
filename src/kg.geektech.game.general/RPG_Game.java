@@ -58,9 +58,6 @@ public class RPG_Game {
                     boss.setHealth(0);
                 }
             }
-            if (heroes[i] instanceof Warrior){
-                heroes[i].setDamage(50);
-            }
         }
     }
 
